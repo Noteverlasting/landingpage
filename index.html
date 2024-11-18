@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Consigue un descuento en cualquier diseño que desees realizar como bienvenida a decarabia" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" href="css/style.css" as="style" />
+  <link rel="preload" href="img/icn_decc.webp" as="image">
+  <link rel="preload" href="img/Logo_decca.webp" as="image">
+  <link rel="preload" href="img/tatt_serp.webp" as="image">
+  <link rel="preload" href="img/tatt_ull.webp" as="image">
+  <link rel="preload" href="img/dorsocarta.webp" as="image">
+  <link rel="icon" type="image/ico" href="img/favicon.gif" />
+
+</head>
+
+<body>
+  <div class="background-image"></div>
+  <div class="content">
+    <header>
+      <img src="img/Logo_decca.webp" alt="Logotipo Decarabia" class="logo" />
+      <h1>★ Promoción de bienvenida ★</h1>
+      <img src="img/icn_ojo.webp" alt="estrella" class="estrella">
+    </header>
+    <main>
+      <div class="container">
+        <section class="column">
+          <div class="images">
+            <p>&#9675;</p>
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/mob_tatt_serp.webp">
+              <source media="(max-width: 1024px)" srcset="img/tatt_serp.webp">
+              <img src="img/mob_tatt_serp.webp" alt="Ejemplo Ilustracion" />
+            </picture>
+
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/mob_tatt_ull.webp">
+              <source media="(max-width: 1024px)" srcset="img/tatt_ull.webp">
+              <img src="img/mob_tatt_ull.webp" alt="Ejemplo Tatuaje" />
+            </picture>
+
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/mob_dorsocarta.webp">
+              <source media="(max-width: 1024px)" srcset="img/dorsocarta.webp">
+              <img src="img/mob_dorsocarta.webp" alt="Ejemplo Digital" />
+            </picture>
+            <p>&#9675;</p>
+          </div>
+        </section>
+        <section class="column2">
+          <h2> Gracias por tu visita</h2>
+          <p>
+            ¡Aprovecha esta promo y consigue un descuento para realizar un proyecto con decarabia! Puedes elegir entre
+            Tatuaje,
+            Ilustración o Diseño digital
+          </p>
+          <form aria-label="Formulario de promoción">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required aria-required="true" placeholder="Escribe tu nombre" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true" placeholder="Escribe tu e-mail" />
+            <label for="option">Elige una opción:</label>
+            <select id="option" name="option" required aria-required="true">
+              <option value="">Selecciona una opción</option>
+              <option value="tatuaje">Tatuaje</option>
+              <option value="ilustracion">Ilustración</option>
+              <option value="diseno_digital">Diseño digital</option>
+            </select>
+            <div role="group" aria-labelledby="privacy-label">
+              <span id="privacy-label">Términos y condiciones:</span>
+              <label>
+                <input type="checkbox" id="privacy" name="privacy" required /><br>
+                Acepto la protección de datos
+              </label>
+            </div>
+            <button type="submit" aria-label="Enviar formulario"><strong>Enviar</strong></button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <a href="https://www.instagram.com/decarabia" target="_blank">
+        <img src="img/icn_instagram.webp" alt="Instagram" class="social-icon" />
+        <span> decarabia tattoo</span>
+      </a>
+      <p>&copy; 2024 || Decarabia. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
