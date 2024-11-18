@@ -13,7 +13,7 @@ body {
     border: 10px double #ff9d00;
     background-color: #720476;
     overflow: visible;
-    height: 100dvh
+    height: auto
 }
 
 .background-image {
@@ -34,7 +34,8 @@ body {
 .content {
     position: relative;
     z-index: 1;
-    text-align: center
+    text-align: center;
+    height: auto;
 }
 
 header {
