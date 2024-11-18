@@ -150,15 +150,15 @@ button {
     font-size: x-large;
     margin-left: 50px;
     margin-right: 50px;
-    box-shadow: 1px 3px 10px #494949;
+    box-shadow: 1px 3px 10px #494949;}
 
-    &:hover {
+button:hover {
         background-color: #ffc400;
         color: #ac08ac;
         box-shadow: 1px 3px 10px #ff01c8;
         animation: scalebuton 2s ease-in-out infinite
     }
-}
+
 
 @keyframes scalebuton {
 
